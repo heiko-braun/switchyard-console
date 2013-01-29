@@ -19,16 +19,17 @@
 
 package org.switchyard.console.client.ui.runtime;
 
-import org.jboss.as.console.client.domain.model.ServerInstance;
-import org.jboss.as.console.client.shared.state.ServerSelectionEvent;
+import org.jboss.as.console.client.plugins.RuntimeGroup;
+import org.jboss.as.console.client.shared.state.ServerSelectionChanged;
 import org.jboss.as.console.client.shared.subsys.RevealStrategy;
+import org.jboss.as.console.spi.RuntimeExtension;
 import org.jboss.ballroom.client.layout.LHSHighlightEvent;
 import org.switchyard.console.client.NameTokens;
 
 import com.google.gwt.core.client.Scheduler;
-import com.google.gwt.event.shared.EventBus;
 import com.google.gwt.event.shared.GwtEvent.Type;
 import com.google.inject.Inject;
+import com.google.web.bindery.event.shared.EventBus;
 import com.gwtplatform.mvp.client.RequestTabsHandler;
 import com.gwtplatform.mvp.client.TabContainerPresenter;
 import com.gwtplatform.mvp.client.TabView;
@@ -48,7 +49,7 @@ import com.gwtplatform.mvp.client.proxy.RevealContentHandler;
  * @author Rob Cernich
  */
 public class RuntimePresenter extends TabContainerPresenter<RuntimePresenter.MyView, RuntimePresenter.MyProxy>
-        implements ServerSelectionEvent.ServerSelectionListener {
+        implements ServerSelectionChanged.ChangeListener {
 
     /**
      * MyProxy
@@ -56,7 +57,8 @@ public class RuntimePresenter extends TabContainerPresenter<RuntimePresenter.MyV
      * The proxy type associated with this presenter.
      */
     @ProxyCodeSplit
-    @NameToken(NameTokens.RUNTIME_PRESENTER)
+    @NameToken(NameTokens.RUNTIME_OPERATIONS_PRESENTER)
+    @RuntimeExtension(name = NameTokens.RUNTIME_TEXT, group = RuntimeGroup.OPERATiONS, key = NameTokens.SUBSYSTEM)
     public interface MyProxy extends Proxy<RuntimePresenter>, Place {
     }
 
@@ -111,7 +113,7 @@ public class RuntimePresenter extends TabContainerPresenter<RuntimePresenter.MyV
     }
 
     @Override
-    public void onServerSelection(String hostName, final ServerInstance server) {
+    public void onServerSelectionChanged(boolean isRunning) {
         // getView().refreshTabs();
     }
 
