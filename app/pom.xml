@@ -90,7 +90,7 @@
                 requires further investigation though.
                 -->
 
-            <plugin>
+            <!--plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>gwt-maven-plugin</artifactId>
                 <configuration>
@@ -99,7 +99,7 @@
                     <disableClassMetadata>false</disableClassMetadata>
                     <enableClosureCompiler>false</enableClosureCompiler>
                 </configuration>
-            </plugin>
+            </plugin-->
         </plugins>
     </build>
 </project>
