@@ -22,12 +22,7 @@
   -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <!-- POM file generated with GWT webAppCreator -->
-    <parent>
-        <groupId>org.jboss.as</groupId>
-        <artifactId>jboss-as-console-build</artifactId>
-        <version>1.5.1-SNAPSHOT</version>
-        <relativePath>../../../jbossas/console/build/pom.xml</relativePath>
-    </parent>
+
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.switchyard.console</groupId>
     <artifactId>switchyard-console-application</artifactId>
@@ -35,19 +30,99 @@
     <packaging>war</packaging>
     <name>SwitchYard: Management Console Application</name>
     <description>Integrated AS7 console application, which includes the SwitchYard extension.</description>
+
+
+    <!-- Parent -->
+    <parent>
+        <groupId>org.jboss.as</groupId>
+        <artifactId>jboss-as-console-build</artifactId>
+        <version>1.5.1.Final</version>
+        <relativePath/>
+    </parent>
+
     <dependencies>
         <dependency>
             <groupId>org.switchyard.console</groupId>
-            <artifactId>switchyard-console-extension</artifactId>
+            <artifactId>switchyard-console-component-core</artifactId>
             <version>${project.version}</version>
-            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.switchyard.console</groupId>
-            <artifactId>switchyard-console-extension</artifactId>
+            <artifactId>switchyard-console-component-bean</artifactId>
             <version>${project.version}</version>
-            <classifier>sources</classifier>
-            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.switchyard.console</groupId>
+            <artifactId>switchyard-console-component-bpel</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.switchyard.console</groupId>
+            <artifactId>switchyard-console-component-bpm</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.switchyard.console</groupId>
+            <artifactId>switchyard-console-component-camel</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.switchyard.console</groupId>
+            <artifactId>switchyard-console-component-clojure</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.switchyard.console</groupId>
+            <artifactId>switchyard-console-component-hornetq</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.switchyard.console</groupId>
+            <artifactId>switchyard-console-component-rules</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.switchyard.console</groupId>
+            <artifactId>switchyard-console-component-soap</artifactId>
+            <version>${project.version}</version>
         </dependency>
     </dependencies>
- </project>
+
+    <build>
+        <plugins>
+            <!--
+                Make sure changes to the 'gwt' module are picked up in hosted mode.
+                Without appending the source path this would not be possible.
+             -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>build-helper-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>add-source</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>add-source</goal>
+                        </goals>
+                        <configuration>
+                            <sources>
+                                <source>../component/bean/src/main/java</source>
+                                <source>../component/bpel/src/main/java</source>
+                                <source>../component/bpm/src/main/java</source>
+                                <source>../component/camel/src/main/java</source>
+                                <source>../component/clojure/src/main/java</source>
+                                <source>../component/core/src/main/java</source>
+                                <source>../component/hornetq/src/main/java</source>
+                                <source>../component/rules/src/main/java</source>
+                                <source>../component/soap/src/main/java</source>
+
+                                <source>../gwt/src/main/java</source>
+
+                            </sources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>

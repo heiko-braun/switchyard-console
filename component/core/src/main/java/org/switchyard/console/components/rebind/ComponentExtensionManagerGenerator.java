@@ -42,11 +42,11 @@ import com.google.inject.Inject;
 
 /**
  * ComponentExtensionManagerGenerator
- * 
+ * <p/>
  * GWT code generator for ComponentExtensionManager. A code generator is used
  * because reflection cannot be used on the client side. This generator scans
  * for classes annotated with ComponentExtension and adds them to the manager.
- * 
+ *
  * @author Rob Cernich
  */
 public class ComponentExtensionManagerGenerator extends Generator {
@@ -104,7 +104,7 @@ public class ComponentExtensionManagerGenerator extends Generator {
     }
 
     private void generateClass(TreeLogger logger, GeneratorContext context, String packageName, String className,
-            List<JClassType> componentExtensionClasses) {
+                               List<JClassType> componentExtensionClasses) {
         PrintWriter pw = context.tryCreate(logger, packageName, className);
         if (pw == null) {
             return;

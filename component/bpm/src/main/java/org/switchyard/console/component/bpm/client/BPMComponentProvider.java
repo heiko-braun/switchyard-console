@@ -25,9 +25,9 @@ import org.switchyard.console.components.client.ui.ComponentConfigurationPresent
 
 /**
  * BPMComponentProvider
- * 
+ * <p/>
  * ComponentProvider for the BPM component.
- * 
+ *
  * @author Rob Cernich
  */
 @ComponentExtension(displayName = "BPM", componentName = "org.switchyard.component.bpm", activationTypes = "bpm")

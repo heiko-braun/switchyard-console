@@ -32,9 +32,9 @@ import com.google.gwt.user.client.ui.Widget;
 
 /**
  * SOAPComponentConfigurationView
- * 
+ * <p/>
  * Customized component configuration view for the SOAP component.
- * 
+ *
  * @author Rob Cernich
  */
 public class SOAPComponentConfigurationView extends BaseComponentConfigurationView {
@@ -65,7 +65,7 @@ public class SOAPComponentConfigurationView extends BaseComponentConfigurationVi
         metaData.setNumColumns(1);
         metaData.setTitleWidth(title.length());
         layout.add(new DefaultGroupRenderer().render(metaData, "null",
-                Collections.<String, FormItem> singletonMap(SOCKET_ADDR, _socketAddr)));
+                Collections.<String, FormItem>singletonMap(SOCKET_ADDR, _socketAddr)));
 
         return layout;
     }

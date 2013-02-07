@@ -25,9 +25,9 @@ import org.switchyard.console.components.client.ui.ComponentConfigurationPresent
 
 /**
  * ClojureComponentProvider
- * 
+ * <p/>
  * ComponentProvider for the Clojure component.
- * 
+ *
  * @author Rob Cernich
  */
 @ComponentExtension(displayName = "Clojure", componentName = "ClojureComponent", activationTypes = "clojure")

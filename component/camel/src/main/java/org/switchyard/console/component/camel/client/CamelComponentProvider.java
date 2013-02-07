@@ -25,13 +25,13 @@ import org.switchyard.console.components.client.ui.ComponentConfigurationPresent
 
 /**
  * CamelComponentProvider
- * 
+ * <p/>
  * ComponentProvider for the Camel component.
- * 
+ *
  * @author Rob Cernich
  */
-@ComponentExtension(displayName = "Camel", componentName = "org.switchyard.component.camel", activationTypes = { "camel", "direct",
-        "file" })
+@ComponentExtension(displayName = "Camel", componentName = "org.switchyard.component.camel", activationTypes = {"camel", "direct",
+        "file"})
 public class CamelComponentProvider extends BaseComponentProvider {
 
     @Override

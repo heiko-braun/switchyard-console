@@ -20,9 +20,9 @@ package org.switchyard.console.components.client.extension;
 
 /**
  * DefaultComponentProviderImpl
- * 
+ * <p/>
  * A default implementation for a default ComponentProvider.
- * 
+ *
  * @author Rob Cernich
  */
 public class DefaultComponentProviderImpl extends BaseComponentProvider implements DefaultComponentProvider {

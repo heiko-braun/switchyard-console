@@ -22,64 +22,65 @@
   -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <!-- POM file generated with GWT webAppCreator -->
+
     <parent>
-        <artifactId>switchyard-console-parent</artifactId>
-        <groupId>org.switchyard.console</groupId>
-        <version>0.8.0-SNAPSHOT</version>
-        <relativePath>../pom.xml</relativePath>
+        <groupId>org.jboss.as</groupId>
+        <artifactId>jboss-as-console-extension</artifactId>
+        <version>1.5.1.Final</version>
+        <relativePath/>
     </parent>
+
     <modelVersion>4.0.0</modelVersion>
     <artifactId>switchyard-console-extension</artifactId>
     <name>SwitchYard: AS7 Management Console Extension</name>
     <description>AS7 management console extension supporting the SwitchYard runtime.</description>
+    <version>0.8.0-SNAPSHOT</version>
+
     <dependencies>
-        <!-- XXX: replace with proper AS dependency once console includes extension support. -->
-        <dependency>
-            <groupId>org.jboss.as</groupId>
-            <artifactId>jboss-as-console-core</artifactId>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.jboss.as</groupId>
-            <artifactId>jboss-as-console-core</artifactId>
-            <classifier>sources</classifier>
-            <scope>provided</scope>
-        </dependency>
         <dependency>
             <groupId>org.switchyard.console</groupId>
             <artifactId>switchyard-console-component-core</artifactId>
+            <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>org.switchyard.console</groupId>
             <artifactId>switchyard-console-component-bean</artifactId>
+            <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>org.switchyard.console</groupId>
             <artifactId>switchyard-console-component-bpel</artifactId>
+            <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>org.switchyard.console</groupId>
             <artifactId>switchyard-console-component-bpm</artifactId>
+            <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>org.switchyard.console</groupId>
             <artifactId>switchyard-console-component-camel</artifactId>
+            <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>org.switchyard.console</groupId>
             <artifactId>switchyard-console-component-clojure</artifactId>
+            <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>org.switchyard.console</groupId>
             <artifactId>switchyard-console-component-hornetq</artifactId>
+            <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>org.switchyard.console</groupId>
             <artifactId>switchyard-console-component-rules</artifactId>
+            <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>org.switchyard.console</groupId>
             <artifactId>switchyard-console-component-soap</artifactId>
+            <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
@@ -98,6 +99,7 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>gwt-maven-plugin</artifactId>
+                <version>2.5.0</version>
                 <executions>
                     <execution>
                         <goals>

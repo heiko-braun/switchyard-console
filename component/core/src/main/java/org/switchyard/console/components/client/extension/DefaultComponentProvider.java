@@ -20,9 +20,9 @@ package org.switchyard.console.components.client.extension;
 
 /**
  * DefaultComponentProvider
- * 
+ * <p/>
  * A simple marker which can be used for injecting a default ComponentProvider.
- * 
+ *
  * @author Rob Cernich
  */
 public interface DefaultComponentProvider extends ComponentProvider {

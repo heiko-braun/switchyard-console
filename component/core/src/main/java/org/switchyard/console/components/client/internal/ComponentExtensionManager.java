@@ -24,26 +24,24 @@ import org.switchyard.console.components.client.extension.ComponentProvider;
 
 /**
  * ComponentExtensionManager
- * 
+ * <p/>
  * Provides an object for retrieving ComponentProvider implementations within
  * the console application.
- * 
- * @see ComponentExtension.
- * 
+ *
  * @author Rob Cernich
+ * @see ComponentExtension.
  */
 public interface ComponentExtensionManager {
 
     /**
      * ComponentProviderProxy
-     * 
+     * <p/>
      * A proxy to the underlying ComponentProvider. The proxy also provides
      * runtime access to the information specified within the annotation (e.g.
      * displayName).
-     * 
-     * @see ComponentExtension.
-     * 
+     *
      * @author Rob Cernich
+     * @see ComponentExtension.
      */
     public interface ComponentProviderProxy extends ComponentProvider {
         /**
@@ -59,7 +57,6 @@ public interface ComponentExtensionManager {
 
     /**
      * @param typeName the activation type.
-     * 
      * @return the component provider; null if no provider is registered for
      *         this type.
      */
@@ -67,7 +64,6 @@ public interface ComponentExtensionManager {
 
     /**
      * @param componentName the name of the SwitchYard component.
-     * 
      * @return the component provider; null if no provider is registered for the
      *         component.
      */

@@ -25,10 +25,10 @@ import com.google.web.bindery.event.shared.EventBus;
 
 /**
  * ComponentProvider
- * 
+ * <p/>
  * Interface to be implemented by ComponentProvider extensions. Extenders should
  * consider using {@link BaseComponentProvider}.
- * 
+ *
  * @author Rob Cernich
  */
 public interface ComponentProvider {
@@ -36,18 +36,17 @@ public interface ComponentProvider {
     /**
      * Creates a new presenter for handling {@link Component} system
      * configuration.
-     * 
+     *
      * @param eventBus the EventBus.
-     * @param view the corresponding view.
-     * 
+     * @param view     the corresponding view.
      * @return a new presenter.
      */
     public ComponentConfigurationPresenter createConfigurationPresenter(EventBus eventBus,
-            ComponentConfigurationView view);
+                                                                        ComponentConfigurationView view);
 
     /**
      * Creates a new view for handling {@link Component} system configuration.
-     * 
+     *
      * @return a new view.
      */
     public ComponentConfigurationView createConfigurationView();

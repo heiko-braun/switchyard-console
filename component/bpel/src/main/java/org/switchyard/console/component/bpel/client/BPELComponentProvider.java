@@ -25,9 +25,9 @@ import org.switchyard.console.components.client.ui.ComponentConfigurationPresent
 
 /**
  * BPELComponentProvider
- * 
+ * <p/>
  * ComponentProvider for the BPEL component.
- * 
+ *
  * @author Rob Cernich
  */
 @ComponentExtension(displayName = "BPEL", componentName = "org.switchyard.component.bpel", activationTypes = "bpel")

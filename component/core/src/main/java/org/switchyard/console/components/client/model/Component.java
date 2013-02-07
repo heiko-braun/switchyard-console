@@ -23,9 +23,9 @@ import java.util.Set;
 
 /**
  * Component
- * 
+ * <p/>
  * Represents a SwitchYard component.
- * 
+ *
  * @author Rob Cernich
  */
 public interface Component {
@@ -53,11 +53,11 @@ public interface Component {
     /**
      * @return component properties.
      */
-    public Map<String,String> getProperties();
+    public Map<String, String> getProperties();
 
     /**
      * @param properties component properties.
      */
-    public void setProperties(Map<String,String> properties);
+    public void setProperties(Map<String, String> properties);
 
 }

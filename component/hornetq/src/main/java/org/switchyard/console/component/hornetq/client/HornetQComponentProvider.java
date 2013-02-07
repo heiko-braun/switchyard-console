@@ -25,9 +25,9 @@ import org.switchyard.console.components.client.ui.ComponentConfigurationPresent
 
 /**
  * HornetQComponentProvider
- * 
+ * <p/>
  * ComponentProvider for the HornetQ component.
- * 
+ *
  * @author Rob Cernich
  */
 @ComponentExtension(displayName = "HornetQ", componentName = "org.switchyard.component.hornetq", activationTypes = "hornetq")

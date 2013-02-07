@@ -26,11 +26,11 @@ import java.lang.annotation.Target;
 
 /**
  * ComponentExtension
- * 
+ * <p/>
  * Marks a class which provides support for a specific SwitchYard component. The
  * class will provide a configuration view for the component, plus service
  * implementation and binding views where applicable.
- * 
+ *
  * @author Rob Cernich
  */
 @Documented

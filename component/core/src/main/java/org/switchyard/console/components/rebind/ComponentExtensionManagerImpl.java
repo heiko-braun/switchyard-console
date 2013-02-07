@@ -29,10 +29,10 @@ import com.google.gwt.core.client.GWT;
 
 /**
  * ComponentExtensionManagerImpl
- * 
+ * <p/>
  * This is a template ComponentExtensionManager implementation used to help code
  * the generator.
- * 
+ *
  * @author Rob Cernich
  */
 public class ComponentExtensionManagerImpl implements ComponentExtensionManager {

@@ -26,10 +26,10 @@ import com.gwtplatform.mvp.client.View;
 
 /**
  * ComponentConfigurationPresenter
- * 
+ * <p/>
  * This class defines the API for the component presenter in the core console
  * UI. Component extensions must extend this class for their presenter logic.
- * 
+ *
  * @author Rob Cernich
  */
 public abstract class ComponentConfigurationPresenter extends
@@ -37,11 +37,11 @@ public abstract class ComponentConfigurationPresenter extends
 
     /**
      * ComponentConfigurationView
-     * 
+     * <p/>
      * This class defines the view API for the component view in the core
      * console UI. Component extensions must extend this class for their view
      * logic.
-     * 
+     *
      * @author Rob Cernich
      */
     public interface ComponentConfigurationView extends View {
@@ -59,9 +59,9 @@ public abstract class ComponentConfigurationPresenter extends
 
     /**
      * Create a new ComponentConfigurationPresenter.
-     * 
+     *
      * @param eventBus the EventBus.
-     * @param view the view.
+     * @param view     the view.
      */
     protected ComponentConfigurationPresenter(final EventBus eventBus, final ComponentConfigurationView view) {
         super(false, eventBus, view);

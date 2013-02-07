@@ -26,11 +26,11 @@ import com.google.inject.Inject;
 
 /**
  * ComponentProviders
- * 
+ * <p/>
  * A wrapper which provides access to ComponentProvider implementations
  * contributed using the ComponentExtension annotation, as well as default
  * provider for use when a specified provider is not available.
- * 
+ *
  * @author Rob Cernich
  */
 public class ComponentProviders implements ComponentExtensionManager {
@@ -40,8 +40,8 @@ public class ComponentProviders implements ComponentExtensionManager {
 
     /**
      * Create a new ComponentProviders.
-     * 
-     * @param defaultProvider the default ComponentProvider.
+     *
+     * @param defaultProvider  the default ComponentProvider.
      * @param extensionManager the ComponentExtensionManager.
      */
     @Inject

@@ -25,9 +25,9 @@ import org.switchyard.console.components.client.ui.ComponentConfigurationPresent
 
 /**
  * BeanComponentProvider
- * 
+ * <p/>
  * ComponentProvider for the Bean component.
- * 
+ *
  * @author Rob Cernich
  */
 @ComponentExtension(displayName = "Bean", componentName = "org.switchyard.component.bean", activationTypes = "bean")

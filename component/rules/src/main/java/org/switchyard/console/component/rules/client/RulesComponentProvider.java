@@ -25,9 +25,9 @@ import org.switchyard.console.components.client.ui.ComponentConfigurationPresent
 
 /**
  * RulesComponentProvider
- * 
+ * <p/>
  * ComponentProvider for the Rules component.
- * 
+ *
  * @author Rob Cernich
  */
 @ComponentExtension(displayName = "Rules", componentName = "org.switchyard.component.rules", activationTypes = "rules")

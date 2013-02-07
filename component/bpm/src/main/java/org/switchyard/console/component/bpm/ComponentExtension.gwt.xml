@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 2.2.0//EN" "http://google-web-toolkit.googlecode.com/svn/tags/2.2.0/distro-source/core/src/gwt-module.dtd">
+<!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 2.2.0//EN"
+        "http://google-web-toolkit.googlecode.com/svn/tags/2.2.0/distro-source/core/src/gwt-module.dtd">
 <module rename-to="ComponentExtension">
-  <inherits name="org.jboss.ballroom.Framework" />
-  <inherits name="org.switchyard.console.components.ComponentExtensionAPI" />
+    <inherits name="org.jboss.ballroom.Framework"/>
+    <inherits name="org.switchyard.console.components.ComponentExtensionAPI"/>
 
-  <source path="client" />
+    <source path="client"/>
 </module>

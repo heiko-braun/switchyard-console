@@ -37,15 +37,15 @@ import com.gwtplatform.mvp.client.ViewImpl;
 
 /**
  * BaseComponentConfigurationView
- * 
+ * <p/>
  * Base implementation for ComponentConfigurationView. This implementation
  * provides controls for displaying: name, activation types and a table for
  * properties.
- * 
+ * <p/>
  * Extenders may override {@link #createComponentDetailsWidget()} and
  * {@link #updateComponentDetails()} to provide customized controls for
  * editing/viewing the component's configuration.
- * 
+ *
  * @author Rob Cernich
  */
 public class BaseComponentConfigurationView extends ViewImpl implements ComponentConfigurationView {
