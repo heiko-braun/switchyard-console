@@ -34,7 +34,7 @@
     <artifactId>switchyard-console-extension</artifactId>
     <name>SwitchYard: AS7 Management Console Extension</name>
     <description>AS7 management console extension supporting the SwitchYard runtime.</description>
-    <version>0.8.0-SNAPSHOT</version>
+    <version>0.8.1-SNAPSHOT</version>
 
     <dependencies>
         <dependency>

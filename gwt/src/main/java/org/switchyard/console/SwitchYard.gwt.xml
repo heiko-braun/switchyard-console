@@ -19,12 +19,12 @@
 
 <module rename-to="SwitchYard">
 
-  <inherits name="org.switchyard.console.Extensions" />
-  <inherits name="org.jboss.as.console.App" />
+    <inherits name="org.switchyard.console.Extensions" />
+    <inherits name="org.jboss.as.console.App" />
 
-  <!-- Specify the paths for translatable code -->
-  <source path='client' />
-  <source path='shared' />
+    <!-- Specify the paths for translatable code -->
+    <source path='client' />
+    <source path='shared' />
 
     <!-- debug settings to speed up the build -->
     <extend-property name="locale" values="en"/>

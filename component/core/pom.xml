@@ -26,14 +26,14 @@
     <parent>
         <artifactId>switchyard-console-components</artifactId>
         <groupId>org.switchyard.console</groupId>
-        <version>0.8.0-SNAPSHOT</version>
+        <version>0.8.1-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
     <artifactId>switchyard-console-component-core</artifactId>
     <name>SwitchYard: Console Core Component Module</name>
     <description>Provides API for component specific extensions to the SwitchYard console.</description>
-    <version>0.8.0-SNAPSHOT</version>
+    <version>0.8.1-SNAPSHOT</version>
 
     <dependencies>
         <dependency>
