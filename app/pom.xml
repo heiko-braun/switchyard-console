@@ -31,7 +31,6 @@
     <name>SwitchYard: Management Console Application</name>
     <description>Integrated AS7 console application, which includes the SwitchYard extension.</description>
 
-
     <!-- Parent -->
     <parent>
         <groupId>org.jboss.as</groupId>
@@ -47,53 +46,6 @@
             <artifactId>switchyard-console-extension</artifactId>
             <version>0.8.1-SNAPSHOT</version>
         </dependency>
-
-        <!--dependency>
-            <groupId>org.switchyard.console</groupId>
-            <artifactId>switchyard-console-component-core</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.switchyard.console</groupId>
-            <artifactId>switchyard-console-component-bean</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.switchyard.console</groupId>
-            <artifactId>switchyard-console-component-bpel</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.switchyard.console</groupId>
-            <artifactId>switchyard-console-component-bpm</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.switchyard.console</groupId>
-            <artifactId>switchyard-console-component-camel</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.switchyard.console</groupId>
-            <artifactId>switchyard-console-component-clojure</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.switchyard.console</groupId>
-            <artifactId>switchyard-console-component-hornetq</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.switchyard.console</groupId>
-            <artifactId>switchyard-console-component-rules</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.switchyard.console</groupId>
-            <artifactId>switchyard-console-component-soap</artifactId>
-            <version>${project.version}</version>
-        </dependency-->
-
 
     </dependencies>
 
@@ -131,6 +83,22 @@
                         </configuration>
                     </execution>
                 </executions>
+            </plugin>
+
+            <!--
+                this seems to fix the web mode problem
+                requires further investigation though.
+                -->
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>gwt-maven-plugin</artifactId>
+                <configuration>
+                    <style>PRETTY</style>
+                    <disableCastChecking>false</disableCastChecking>
+                    <disableClassMetadata>false</disableClassMetadata>
+                    <enableClosureCompiler>false</enableClosureCompiler>
+                </configuration>
             </plugin>
         </plugins>
     </build>
