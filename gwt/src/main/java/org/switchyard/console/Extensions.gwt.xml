@@ -14,9 +14,6 @@
 
 <module rename-to="Extensions">
 
-    <inherits name="com.allen_sauer.gwt.log.gwt-log-ERROR" />
-    <inherits name="org.jboss.dmr.DMR"/>
-
     <!-- Component Extensions -->
     <inherits name="org.switchyard.console.components.ComponentExtensionAPI" />
     <inherits name="org.switchyard.console.component.bean.ComponentExtension" />
