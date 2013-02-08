@@ -17,7 +17,7 @@
   ~ MA  02110-1301, USA.
   -->
 
-<module rename-to="SwitchYard">
+<module rename-to="app">
 
     <inherits name="org.jboss.as.console.App" />
     <inherits name="org.switchyard.console.Extensions" />
