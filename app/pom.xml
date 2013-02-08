@@ -105,24 +105,6 @@
                     </filesets>
                 </configuration>
             </plugin>
-
-            <!--
-                this seems to fix the web mode problem
-                requires further investigation though.
-                See https://groups.google.com/forum/#!msg/google-web-toolkit-contributors/a9rti6w3IYw/X2SmcpYlgagJ
-                See http://code.google.com/p/google-web-toolkit/issues/detail?id=7683
-                -->
-
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>gwt-maven-plugin</artifactId>
-                <configuration>
-                    <style>DETAILED</style>
-                    <enableClosureCompiler>false</enableClosureCompiler>
-                    <disableCastChecking>false</disableCastChecking>
-                    <disableClassMetadata>false</disableClassMetadata>
-                </configuration>
-            </plugin>
         </plugins>
     </build>
 </project>
