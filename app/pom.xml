@@ -110,6 +110,21 @@
                     </filesets>
                 </configuration>
             </plugin>
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>gwt-maven-plugin</artifactId>
+                <version>2.5.0</version>
+                <configuration>
+                    <extraJvmArgs>-Xmx1024m -DDEBUG -XX:MaxPermSize=256M</extraJvmArgs>
+                    <style>DETAILED</style>
+                    <disableCastChecking>false</disableCastChecking>
+                    <disableClassMetadata>false</disableClassMetadata>
+                    <enableClosureCompiler>false</enableClosureCompiler>
+                    <fragmentCount>0</fragmentCount>
+                </configuration>
+            </plugin>
+
         </plugins>
     </build>
 </project>
