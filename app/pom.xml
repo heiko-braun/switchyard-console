@@ -117,10 +117,10 @@
                 <version>2.5.0</version>
                 <configuration>
                     <extraJvmArgs>-Xmx1024m -DDEBUG -XX:MaxPermSize=256M</extraJvmArgs>
-                    <style>DETAILED</style>
-                    <disableCastChecking>false</disableCastChecking>
-                    <disableClassMetadata>false</disableClassMetadata>
-                    <enableClosureCompiler>false</enableClosureCompiler>
+                    <style>OBF</style>
+                    <disableCastChecking>true</disableCastChecking>
+                    <disableClassMetadata>true</disableClassMetadata>
+                    <enableClosureCompiler>true</enableClosureCompiler>
                     <fragmentCount>0</fragmentCount>
                 </configuration>
             </plugin>
